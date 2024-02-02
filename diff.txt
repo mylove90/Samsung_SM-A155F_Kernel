@@ -407,20 +407,6 @@
  drivers/iio/adc/mt6577_auxadc.c                    |   236 +-
  drivers/iio/adc/mtk-spmi-pmic-adc.c (new)          |   741 +
  .../infiniband/hw/usnic/usnic_uiom_interval_tree.c |     3 +-
- drivers/interconnect/Kconfig                       |     1 +
- drivers/interconnect/Makefile                      |     1 +
- drivers/interconnect/mediatek/Kconfig (new)        |    87 +
- drivers/interconnect/mediatek/Makefile (new)       |    34 +
- drivers/interconnect/mediatek/mmqos-hrt.c (new)    |   307 +
- drivers/interconnect/mediatek/mmqos-md.c (new)     |    87 +
- drivers/interconnect/mediatek/mmqos-mt6789.c (new) |   369 +
- drivers/interconnect/mediatek/mmqos-mt6853.c (new) |   415 +
- drivers/interconnect/mediatek/mmqos-mt6873.c (new) |   444 +
- drivers/interconnect/mediatek/mmqos-mtk.c (new)    |   784 +
- drivers/interconnect/mediatek/mmqos-mtk.h (new)    |   117 +
- .../mediatek/mtk-dvfsrc-icc-trace.h (new)          |    58 +
- drivers/interconnect/mediatek/mtk-emi.c (new)      |   396 +
- drivers/interconnect/qcom/bcm-voter.c              |     2 +-
  drivers/iommu/Kconfig                              |     3 +-
  drivers/iommu/dma-iommu.c                          |    38 +-
  drivers/iommu/intel/iommu.c                        |    40 +-
@@ -2606,4 +2592,4 @@
  tools/thermal/tmon/Makefile                        |     2 +-
  usr/Makefile                                       |     5 +
  virt/kvm/kvm_main.c                                |    19 +-
- 2608 files changed, 688066 insertions(+), 39698 deletions(-)
+ 2594 files changed, 684965 insertions(+), 39697 deletions(-)
