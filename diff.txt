@@ -578,38 +578,6 @@
  drivers/net/tun.c                                  |   157 +
  drivers/net/usb/r8152.c                            |    33 +-
  drivers/net/wireguard/queueing.h                   |    11 -
- drivers/nfc/Kconfig                                |   284 +-
- drivers/nfc/Makefile                               |    56 +-
- drivers/nfc/cold_reset.c (new)                     |   400 +
- drivers/nfc/cold_reset.h (new)                     |    43 +
- drivers/nfc/nfc_logger/nfc_logger.c (new)          |   282 +
- drivers/nfc/nfc_logger/nfc_logger.h (new)          |    47 +
- drivers/nfc/nfc_wakelock.h (new)                   |    91 +
- drivers/nfc/p61.c (new)                            |  1518 ++
- drivers/nfc/p61.h (new)                            |   141 +
- drivers/nfc/pn547.c (new)                          |  2415 ++
- drivers/nfc/pn547.h (new)                          |   343 +
- drivers/nfc/snvm/Kconfig (new)                     |    41 +
- drivers/nfc/snvm/Makefile (new)                    |    24 +
- drivers/nfc/snvm/hal/ese_hal.c (new)               |   105 +
- drivers/nfc/snvm/hal/ese_hal.h (new)               |    31 +
- drivers/nfc/snvm/hal/ese_i2c.c (new)               |    54 +
- drivers/nfc/snvm/hal/ese_i2c.h (new)               |    24 +
- drivers/nfc/snvm/hal/ese_spi.c (new)               |    54 +
- drivers/nfc/snvm/hal/ese_spi.h (new)               |    24 +
- drivers/nfc/snvm/protocol/ese_data.c (new)         |   171 +
- drivers/nfc/snvm/protocol/ese_data.h (new)         |    38 +
- drivers/nfc/snvm/protocol/ese_error.h (new)        |    49 +
- drivers/nfc/snvm/protocol/ese_iso7816_t1.c (new)   |   749 +
- drivers/nfc/snvm/protocol/ese_iso7816_t1.h (new)   |   148 +
- drivers/nfc/snvm/protocol/ese_log.h (new)          |    28 +
- drivers/nfc/snvm/protocol/ese_memory.c (new)       |    78 +
- drivers/nfc/snvm/protocol/ese_memory.h (new)       |    37 +
- drivers/nfc/snvm/protocol/ese_protocol.h (new)     |    26 +
- drivers/nfc/snvm/sec_k250a.c (new)                 |   429 +
- drivers/nfc/snvm/sec_star.c (new)                  |   532 +
- drivers/nfc/snvm/sec_star.h (new)                  |    61 +
- drivers/nfc/snvm/snvm_wakelock.h (new)             |    74 +
  drivers/nvme/target/io-cmd-bdev.c                  |     8 +-
  drivers/nvme/target/passthru.c                     |     4 +-
  drivers/nvmem/Kconfig                              |    31 +
@@ -2923,4 +2891,4 @@
  tools/thermal/tmon/Makefile                        |     2 +-
  usr/Makefile                                       |     5 +
  virt/kvm/kvm_main.c                                |    19 +-
- 2925 files changed, 808509 insertions(+), 40286 deletions(-)
+ 2893 files changed, 800171 insertions(+), 40227 deletions(-)
