@@ -44,31 +44,6 @@
  Documentation/vm/index.rst                         |      1 -
  MAINTAINERS                                        |     21 +-
  Makefile                                           |     75 +-
- android/abi_gki_aarch64.xml                        | 100771 +++---
- android/abi_gki_aarch64_asus (new +x)              |    280 +
- android/abi_gki_aarch64_db845c                     |    424 +-
- android/abi_gki_aarch64_exynos                     |   2685 +-
- android/abi_gki_aarch64_exynosauto (new +x)        |   1499 +
- android/abi_gki_aarch64_fips140                    |     31 +
- android/abi_gki_aarch64_galaxy                     |   4683 +-
- android/abi_gki_aarch64_generic                    |    661 +-
- android/abi_gki_aarch64_hikey960                   |    182 +-
- android/abi_gki_aarch64_honor (new)                |      3 +
- android/abi_gki_aarch64_imx (new +x)               |   2402 +
- android/abi_gki_aarch64_lenovo (new)               |     10 +
- android/abi_gki_aarch64_mtk (new)                  |   3342 +
- android/abi_gki_aarch64_oplus (new)                |   3694 +
- android/abi_gki_aarch64_qcom (new)                 |   3082 +
- android/abi_gki_aarch64_rockchip                   |    505 +-
- android/abi_gki_aarch64_transsion (new)            |     74 +
- android/abi_gki_aarch64_tuxera (new)               |    248 +
- android/abi_gki_aarch64_type_visibility            |      5 +-
- android/abi_gki_aarch64_unisoc (new)               |    275 +
- android/abi_gki_aarch64_virtual_device             |    632 +-
- android/abi_gki_aarch64_vivo (new)                 |   2089 +
- android/abi_gki_aarch64_xiaomi (new)               |    216 +
- android/abi_gki_aarch_galaxy_presubmit (new +x)    |     11 +
- android/abi_greylist (new +x)                      |      4 +
  arch/Kconfig                                       |     12 +-
  arch/arm/boot/compressed/Makefile                  |      8 +-
  arch/arm/include/asm/hypervisor.h                  |      4 -
@@ -9081,4 +9056,4 @@
  tools/thermal/tmon/Makefile                        |      2 +-
  usr/Makefile                                       |      5 +
  virt/kvm/kvm_main.c                                |     19 +-
- 9083 files changed, 8822240 insertions(+), 92341 deletions(-)
+ 9058 files changed, 8743671 insertions(+), 43102 deletions(-)
