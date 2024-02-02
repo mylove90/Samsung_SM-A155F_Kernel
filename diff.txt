@@ -420,27 +420,6 @@
  drivers/input/keyboard/Makefile                    |     3 +-
  drivers/input/keyboard/mtk-kpd.c (new)             |   358 +
  drivers/input/keyboard/mtk-pmic-keys.c             |   311 +-
- drivers/input/sec_input/Kconfig (new)              |    58 +
- drivers/input/sec_input/Makefile (new)             |    44 +
- drivers/input/sec_input/sec_cmd.c (new)            |  1295 ++
- drivers/input/sec_input/sec_cmd.h (new)            |   164 +
- drivers/input/sec_input/sec_input.c (new)          |  2107 ++
- drivers/input/sec_input/sec_input.h (new)          |   951 +
- .../input/sec_input/sec_input_multi_dev.c (new)    |   292 +
- .../input/sec_input/sec_input_multi_dev.h (new)    |    73 +
- drivers/input/sec_input/sec_input_notifier.c (new) |    72 +
- .../input/sec_input/sec_input_rawdata.c (new +x)   |   219 +
- .../input/sec_input/sec_input_rawdata.h (new +x)   |    71 +
- drivers/input/sec_input/sec_secure_touch.c (new)   |   443 +
- drivers/input/sec_input/sec_secure_touch.h (new)   |    97 +
- drivers/input/sec_input/sec_tclm_v2.c (new)        |   564 +
- drivers/input/sec_input/sec_tclm_v2.h (new)        |   118 +
- drivers/input/sec_input/sec_trusted_touch.c (new)  |   903 +
- drivers/input/sec_input/sec_trusted_touch.h (new)  |   124 +
- drivers/input/sec_input/sec_tsp_dumpkey.c (new)    |   397 +
- drivers/input/sec_input/sec_tsp_dumpkey.h (new)    |    29 +
- drivers/input/sec_input/sec_tsp_log.c (new)        |   572 +
- drivers/input/sec_input/sec_tsp_log.h (new)        |    50 +
  drivers/interconnect/Kconfig                       |     1 +
  drivers/interconnect/Makefile                      |     1 +
  drivers/interconnect/mediatek/Kconfig (new)        |    87 +
@@ -2640,4 +2619,4 @@
  tools/thermal/tmon/Makefile                        |     2 +-
  usr/Makefile                                       |     5 +
  virt/kvm/kvm_main.c                                |    19 +-
- 2642 files changed, 700603 insertions(+), 39752 deletions(-)
+ 2621 files changed, 691960 insertions(+), 39752 deletions(-)
