@@ -510,24 +510,6 @@
  drivers/media/usb/uvc/uvcvideo.h                   |   144 +-
  drivers/media/v4l2-core/v4l2-common.c              |   124 -
  drivers/media/v4l2-core/v4l2-subdev.c              |     8 +-
- drivers/memory/Kconfig                             |     1 +
- drivers/memory/Makefile                            |     1 +
- drivers/memory/mediatek/Kconfig (new)              |    41 +
- drivers/memory/mediatek/Makefile (new)             |    13 +
- drivers/memory/mediatek/dramc.c (new)              |   682 +
- drivers/memory/mediatek/dramc_bin.c (new)          |   376 +
- drivers/memory/mediatek/emi-cen.c (new)            |  1374 ++
- drivers/memory/mediatek/emi-dbg.c (new)            |    46 +
- drivers/memory/mediatek/emi-fake-eng.c (new)       |   534 +
- drivers/memory/mediatek/emi-isu.c (new)            |   277 +
- drivers/memory/mediatek/emi-mpu-hook-v1.c (new)    |   104 +
- drivers/memory/mediatek/emi-mpu-test-v2.c (new)    |   307 +
- drivers/memory/mediatek/emi-mpu-test.c (new)       |   363 +
- drivers/memory/mediatek/emi-mpu-v2.c (new)         |   644 +
- drivers/memory/mediatek/emi-mpu.c (new)            |   887 +
- drivers/memory/mediatek/emi-slb.c (new)            |   319 +
- drivers/memory/mediatek/emi_mpu.h (new)            |    76 +
- drivers/memory/mtk-smi.c                           |  2508 +-
  drivers/mfd/Kconfig                                |    69 +
  drivers/mfd/Makefile                               |    10 +
  drivers/mfd/mt6338-core.c (new)                    |   263 +
@@ -5861,4 +5843,4 @@
  tools/thermal/tmon/Makefile                        |     2 +-
  usr/Makefile                                       |     5 +
  virt/kvm/kvm_main.c                                |    19 +-
- 5863 files changed, 1848790 insertions(+), 40361 deletions(-)
+ 5845 files changed, 1840275 insertions(+), 40323 deletions(-)
