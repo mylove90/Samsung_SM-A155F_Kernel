@@ -642,29 +642,6 @@
  drivers/ptp/Makefile                               |     2 -
  drivers/ptp/ptp_kvm.c (new)                        |   197 +
  drivers/pwm/pwm-mtk-disp.c                         |    43 +-
- drivers/regulator/Kconfig                          |   138 +
- drivers/regulator/Makefile                         |    20 +
- drivers/regulator/core.c                           |    83 +
- drivers/regulator/mt6315-regulator.c (new)         |   398 +
- drivers/regulator/mt6358-regulator.c               |   667 +-
- drivers/regulator/mt6359p-regulator.c (new)        |   919 +
- drivers/regulator/mt6360-regulator.c               |   867 +-
- drivers/regulator/mt6362-regulator.c (new)         |   527 +
- drivers/regulator/mt6363-regulator.c (new)         |   936 +
- drivers/regulator/mt6368-regulator.c (new)         |   710 +
- drivers/regulator/mt6369-regulator.c (new)         |   661 +
- drivers/regulator/mt6373-regulator.c (new)         |   811 +
- .../regulator/mtk-dvfsrc-regulator-trace.h (new)   |    58 +
- drivers/regulator/mtk-dvfsrc-regulator.c (new)     |   387 +
- drivers/regulator/mtk-extbuck-debug.c (new)        |   124 +
- drivers/regulator/mtk-vmm-regulator.c (new)        |  1015 +
- drivers/regulator/mtk-vmm-regulator.h (new)        |    88 +
- drivers/regulator/mtk-vmm-trace.h (new)            |    67 +
- drivers/regulator/rt5133-regulator.c (new)         |   620 +
- drivers/regulator/rt6160-regulator.c (new)         |   339 +
- drivers/regulator/s2mpb03/Kconfig (new)            |    10 +
- drivers/regulator/s2mpb03/Makefile (new)           |     6 +
- drivers/regulator/s2mpb03/s2mpb03.c (new)          |   751 +
  drivers/remoteproc/Kconfig                         |    28 +
  drivers/remoteproc/Makefile                        |     6 +
  drivers/remoteproc/mtk_ccd.c (new)                 |   480 +
@@ -2663,4 +2640,4 @@
  tools/thermal/tmon/Makefile                        |     2 +-
  usr/Makefile                                       |     5 +
  virt/kvm/kvm_main.c                                |    19 +-
- 2665 files changed, 710343 insertions(+), 40214 deletions(-)
+ 2642 files changed, 700603 insertions(+), 39752 deletions(-)
