@@ -324,75 +324,6 @@
  drivers/android/vendor_hooks.c                     |    264 +-
  drivers/base/core.c                                |      7 -
  drivers/base/devcoredump.c                         |     83 +-
- .../battery/charger/sm5461_charger/Kconfig (new)   |      9 +
- .../battery/charger/sm5461_charger/Makefile (new)  |      4 +
- .../sm5461_charger/sm5461_charger.bzl (new)        |      7 +
- .../charger/sm5461_charger/sm5461_charger.c (new)  |   2266 +
- .../sm5461_charger/sm5461_charger.dtsi (new)       |     14 +
- .../charger/sm5461_charger/sm5461_charger.h (new)  |    244 +
- .../sm5461_charger/sm5461_direct_charger.c (new)   |   2232 +
- .../sm5461_charger/sm5461_direct_charger.h (new)   |    249 +
- .../battery/charger/sm5714_charger/Kconfig (new)   |      7 +
- .../battery/charger/sm5714_charger/Makefile (new)  |      4 +
- .../sm5714_charger/sm5714_charger.bzl (new)        |      7 +
- .../charger/sm5714_charger/sm5714_charger.c (new)  |   1857 +
- .../sm5714_charger/sm5714_charger.dtsi (new)       |     30 +
- .../charger/sm5714_charger/sm5714_charger.h (new)  |    167 +
- .../sm5714_charger/sm5714_charger_oper.c (new)     |    467 +
- drivers/battery/common/Kconfig (new)               |    363 +
- drivers/battery/common/Makefile (new)              |     44 +
- drivers/battery/common/battery_logger.c (new)      |    227 +
- drivers/battery/common/battery_logger.h (new)      |     33 +
- drivers/battery/common/sb_batt_dump.c (new)        |    201 +
- drivers/battery/common/sb_batt_dump.h (new)        |     36 +
- drivers/battery/common/sb_checklist_app.c (new)    |    524 +
- drivers/battery/common/sb_checklist_app.h (new)    |     98 +
- drivers/battery/common/sb_full_soc.c (new)         |    524 +
- drivers/battery/common/sb_full_soc.h (new)         |     34 +
- drivers/battery/common/sb_pass_through.c (new)     |    780 +
- drivers/battery/common/sb_pass_through.h (new)     |     43 +
- drivers/battery/common/sb_tx.c (new)               |    511 +
- drivers/battery/common/sb_tx.h (new)               |    110 +
- drivers/battery/common/sb_wireless.c (new)         |    218 +
- drivers/battery/common/sec_adc.c (new)             |    400 +
- drivers/battery/common/sec_adc.h (new)             |     33 +
- drivers/battery/common/sec_battery.c (new)         |   9691 +
- drivers/battery/common/sec_battery.h (new)         |   1430 +
- drivers/battery/common/sec_battery_data.c (new)    |    436 +
- drivers/battery/common/sec_battery_dt.c (new)      |   2675 +
- drivers/battery/common/sec_battery_dt.h (new)      |     27 +
- drivers/battery/common/sec_battery_misc.c (new)    |    353 +
- drivers/battery/common/sec_battery_misc.h (new)    |     48 +
- drivers/battery/common/sec_battery_sysfs.c (new)   |   4549 +
- drivers/battery/common/sec_battery_sysfs.h (new)   |    371 +
- drivers/battery/common/sec_battery_thermal.c (new) |   1882 +
- drivers/battery/common/sec_battery_ttf.c (new)     |    386 +
- drivers/battery/common/sec_battery_ttf.h (new)     |     67 +
- drivers/battery/common/sec_battery_vote.c (new)    |    593 +
- drivers/battery/common/sec_battery_vote.h (new)    |    126 +
- drivers/battery/common/sec_battery_wc.c (new)      |   1683 +
- drivers/battery/common/sec_charging_common.h (new) |    655 +
- .../battery/common/sec_charging_modprobe.c (new)   |     75 +
- .../common/sec_charging_modprobe.h (new +x)        |     43 +
- drivers/battery/common/sec_cisd.c (new)            |    856 +
- drivers/battery/common/sec_cisd.h (new)            |    272 +
- drivers/battery/common/sec_direct_charger.c (new)  |   1212 +
- drivers/battery/common/sec_direct_charger.h (new)  |    131 +
- drivers/battery/common/sec_pd.c (new)              |    448 +
- drivers/battery/common/sec_step_charging.c (new)   |   1768 +
- drivers/battery/core/Kconfig (new)                 |     93 +
- drivers/battery/core/Makefile (new)                |     15 +
- drivers/battery/core/sb_core.c (new)               |     30 +
- drivers/battery/core/sb_notify.c (new)             |    218 +
- drivers/battery/core/sb_pqueue.c (new)             |    397 +
- drivers/battery/core/sb_sysfs.c (new)              |    152 +
- drivers/battery/core/sb_vote.c (new)               |    540 +
- .../fuelgauge/sm5714_fuelgauge/Kconfig (new)       |     16 +
- .../fuelgauge/sm5714_fuelgauge/Makefile (new)      |      3 +
- .../sm5714_fuelgauge/sm5714_fuelgauge.bzl (new)    |      7 +
- .../sm5714_fuelgauge/sm5714_fuelgauge.c (new)      |   3225 +
- .../sm5714_fuelgauge/sm5714_fuelgauge.dtsi (new)   |    157 +
- .../sm5714_fuelgauge/sm5714_fuelgauge.h (new)      |    364 +
  drivers/block/loop.c                               |     24 +-
  drivers/block/virtio_blk.c                         |     12 +-
  drivers/block/xen-blkback/blkback.c                |      4 +-
@@ -8849,4 +8780,4 @@
  tools/thermal/tmon/Makefile                        |      2 +-
  usr/Makefile                                       |      5 +
  virt/kvm/kvm_main.c                                |     19 +-
- 8851 files changed, 8662910 insertions(+), 43056 deletions(-)
+ 8782 files changed, 8616173 insertions(+), 43056 deletions(-)
