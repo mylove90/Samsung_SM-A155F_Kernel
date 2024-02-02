@@ -750,36 +750,6 @@
  drivers/sti/common/Kconfig (new)                   |     9 +
  drivers/target/target_core_iblock.c                |     9 +-
  drivers/target/target_core_pscsi.c                 |     2 +-
- drivers/thermal/Kconfig                            |    14 +-
- drivers/thermal/Makefile                           |     2 +-
- drivers/thermal/cpufreq_cooling.c                  |     5 -
- drivers/thermal/gov_power_allocator.c              |    13 +-
- drivers/thermal/mediatek/Kconfig (new)             |   119 +
- drivers/thermal/mediatek/Makefile (new)            |    25 +
- drivers/thermal/mediatek/backlight_cooling.c (new) |   180 +
- drivers/thermal/mediatek/backlight_cooling.h (new) |    43 +
- drivers/thermal/mediatek/board_temp.c (new)        |   425 +
- drivers/thermal/mediatek/charger_cooling.c (new)   |   326 +
- drivers/thermal/mediatek/charger_cooling.h (new)   |    64 +
- drivers/thermal/mediatek/md_cooling.c (new)        |   494 +
- drivers/thermal/mediatek/md_cooling.h (new)        |   209 +
- .../thermal/mediatek/md_cooling_debugfs.c (new)    |   294 +
- drivers/thermal/mediatek/pmic_temp.c (new)         |   862 +
- drivers/thermal/mediatek/soc_temp.c (new)          |   793 +
- drivers/thermal/mediatek/soc_temp_lvts.c (new)     |  4504 ++++
- drivers/thermal/mediatek/soc_temp_lvts.h (new)     |   424 +
- drivers/thermal/mediatek/thermal_interface.c (new) |  1112 +
- drivers/thermal/mediatek/thermal_interface.h (new) |   138 +
- drivers/thermal/mediatek/thermal_ipi.c (new)       |   270 +
- drivers/thermal/mediatek/thermal_ipi.h (new)       |    58 +
- drivers/thermal/mediatek/thermal_jatm.c (new)      |   634 +
- drivers/thermal/mediatek/thermal_jatm.h (new)      |    55 +
- drivers/thermal/mediatek/thermal_trace.c (new)     |   483 +
- drivers/thermal/mediatek/thermal_trace.h (new)     |   462 +
- .../thermal/mediatek/thermal_trace_local.h (new)   |    79 +
- drivers/thermal/thermal-generic-adc.c              |    15 +
- drivers/thermal/thermal_core.c                     |     2 -
- drivers/thermal/thermal_sysfs.c                    |    22 +-
  drivers/tty/n_gsm.c                                |    34 +-
  drivers/tty/serial/8250/8250_dma.c                 |    18 +
  drivers/tty/serial/8250/8250_mtk.c                 |   123 +-
@@ -2209,4 +2179,4 @@
  tools/thermal/tmon/Makefile                        |     2 +-
  usr/Makefile                                       |     5 +
  virt/kvm/kvm_main.c                                |    19 +-
- 2211 files changed, 604715 insertions(+), 39697 deletions(-)
+ 2181 files changed, 592618 insertions(+), 39668 deletions(-)
