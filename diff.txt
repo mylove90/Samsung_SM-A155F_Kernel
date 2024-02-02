@@ -378,19 +378,6 @@
  drivers/dma/mediatek/mtk-cqdma.c                   |     29 +-
  drivers/dma/mediatek/mtk-uart-apdma.c              |    129 +-
  drivers/extcon/extcon.c                            |      2 +-
- drivers/fingerprint/Kconfig (new)                  |    121 +
- drivers/fingerprint/Makefile (new)                 |     25 +
- drivers/fingerprint/fingerprint.h (new)            |     46 +
- drivers/fingerprint/fingerprint_common.c (new)     |     69 +
- drivers/fingerprint/fingerprint_common.h (new)     |     54 +
- drivers/fingerprint/fingerprint_common_lsi.c (new) |    150 +
- drivers/fingerprint/fingerprint_common_mtk.c (new) |    103 +
- .../fingerprint/fingerprint_common_qcom.c (new)    |     89 +
- drivers/fingerprint/fingerprint_sysfs.c (new)      |    106 +
- drivers/fingerprint/fingerprint_sysfs.h (new)      |     34 +
- drivers/fingerprint/gw3x_common.c (new)            |   1285 +
- drivers/fingerprint/gw3x_common.h (new)            |    234 +
- drivers/fingerprint/gw3x_spidev.c (new)            |    282 +
  drivers/firmware/Kconfig                           |      1 -
  drivers/firmware/Makefile                          |      1 -
  drivers/firmware/arm_scmi/driver.c                 |     35 +-
@@ -8671,4 +8658,4 @@
  tools/thermal/tmon/Makefile                        |      2 +-
  usr/Makefile                                       |      5 +
  virt/kvm/kvm_main.c                                |     19 +-
- 8673 files changed, 8589886 insertions(+), 42983 deletions(-)
+ 8660 files changed, 8587288 insertions(+), 42983 deletions(-)
