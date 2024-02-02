@@ -618,37 +618,6 @@
  drivers/rtc/rtc-mt6397.c                           |   883 +-
  drivers/rtc/rtc-mt6685.c (new)                     |  1302 ++
  drivers/s390/scsi/zfcp_fsf.c                       |     3 +-
- drivers/samsung/Kconfig (new)                      |    95 +
- drivers/samsung/Makefile (new)                     |    39 +
- drivers/samsung/debug/Kconfig (new)                |    78 +
- drivers/samsung/debug/Makefile (new)               |    31 +
- .../samsung/debug/sec_debug_auto_comment.c (new)   |   116 +
- drivers/samsung/debug/sec_debug_base.c (new)       |   505 +
- drivers/samsung/debug/sec_debug_extra_info.c (new) |   481 +
- drivers/samsung/debug/sec_debug_hist.c (new)       |   110 +
- drivers/samsung/debug/sec_debug_hw_param.c (new)   |   117 +
- drivers/samsung/debug/sec_debug_init_log.c (new)   |   108 +
- drivers/samsung/debug/sec_debug_log.c (new)        |   339 +
- drivers/samsung/debug/sec_debug_pmsg.c (new)       |   324 +
- drivers/samsung/misc/Kconfig (new)                 |    36 +
- drivers/samsung/misc/Makefile (new)                |    15 +
- drivers/samsung/pm/Kconfig (new)                   |    14 +
- drivers/samsung/pm/Makefile (new)                  |     8 +
- drivers/samsung/pm/sec_pm_debug.c (new)            |   256 +
- drivers/samsung/pm/sec_thermistor/Kconfig (new)    |     8 +
- drivers/samsung/pm/sec_thermistor/Makefile (new)   |     5 +
- .../pm/sec_thermistor/sec_thermistor.c (new)       |   364 +
- drivers/samsung/sec_argos.c (new)                  |   794 +
- drivers/samsung/sec_bootstat.c (new)               |   420 +
- drivers/samsung/sec_chipid.c (new)                 |   213 +
- drivers/samsung/sec_class.c (new)                  |    75 +
- drivers/samsung/sec_crash_key.c (new +x)           |    95 +
- drivers/samsung/sec_crash_key_user.c (new)         |   260 +
- drivers/samsung/sec_extention.c (new)              |    48 +
- drivers/samsung/sec_hard_reset_hook.c (new)        |   239 +
- drivers/samsung/sec_key_notifier.c (new)           |   140 +
- drivers/samsung/sec_key_notifier.h (new)           |    33 +
- drivers/samsung/sec_reboot.c (new)                 |   178 +
  drivers/scsi/Kconfig                               |     9 +
  drivers/scsi/hosts.c                               |     1 -
  drivers/scsi/libsas/sas_discover.c                 |     1 +
@@ -2592,4 +2561,4 @@
  tools/thermal/tmon/Makefile                        |     2 +-
  usr/Makefile                                       |     5 +
  virt/kvm/kvm_main.c                                |    19 +-
- 2594 files changed, 684965 insertions(+), 39697 deletions(-)
+ 2563 files changed, 679421 insertions(+), 39697 deletions(-)
