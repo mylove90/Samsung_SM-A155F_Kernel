@@ -441,112 +441,6 @@
  drivers/input/sec_input/sec_tsp_dumpkey.h (new)    |     29 +
  drivers/input/sec_input/sec_tsp_log.c (new)        |    572 +
  drivers/input/sec_input/sec_tsp_log.h (new)        |     50 +
- drivers/input/touchscreen/GT9886/Makefile (new)    |     13 +
- .../touchscreen/GT9886/goodix_cfg_bin.c (new)      |    673 +
- .../touchscreen/GT9886/goodix_cfg_bin.h (new)      |    142 +
- .../touchscreen/GT9886/goodix_default_fw.h (new)   |     25 +
- .../touchscreen/GT9886/goodix_gtx8_update.c (new)  |   1526 +
- .../touchscreen/GT9886/goodix_ts_core.c (new)      |   2251 +
- .../touchscreen/GT9886/goodix_ts_core.h (new)      |    765 +
- .../input/touchscreen/GT9886/goodix_ts_i2c.c (new) |   2533 +
- .../touchscreen/GT9886/goodix_ts_tools.c (new)     |    632 +
- .../input/touchscreen/GT9886/goodix_ts_tui.c (new) |     54 +
- drivers/input/touchscreen/GT9895/Kconfig (new)     |      8 +
- drivers/input/touchscreen/GT9895/Makefile (new)    |     10 +
- .../touchscreen/GT9895/goodix_brl_fwupdate.c (new) |   1106 +
- .../input/touchscreen/GT9895/goodix_brl_hw.c (new) |   1662 +
- .../touchscreen/GT9895/goodix_brl_i2c.c (new)      |    443 +
- .../touchscreen/GT9895/goodix_cfg_bin.c (new)      |    230 +
- .../input/touchscreen/GT9895/goodix_ts_cmd.c (new) |   3931 +
- .../touchscreen/GT9895/goodix_ts_core.c (new)      |   2509 +
- .../touchscreen/GT9895/goodix_ts_core.h (new)      |    834 +
- .../touchscreen/GT9895/goodix_ts_gesture.c (new)   |    416 +
- .../touchscreen/GT9895/goodix_ts_inspect.c (new)   |   1741 +
- .../touchscreen/GT9895/goodix_ts_tools.c (new)     |    504 +
- .../touchscreen/GT9895/goodix_ts_utils.c (new)     |    265 +
- drivers/input/touchscreen/GT9895/sec_cmd.c (new)   |   1100 +
- drivers/input/touchscreen/GT9895/sec_cmd.h (new)   |    130 +
- .../input/touchscreen/GT9895/sec_common_fn.c (new) |   1477 +
- drivers/input/touchscreen/GT9895/sec_input.h (new) |    682 +
- .../input/touchscreen/GT9895/sec_tclm_v2.c (new)   |    613 +
- .../input/touchscreen/GT9895/sec_tclm_v2.h (new)   |    115 +
- drivers/input/touchscreen/GT9896S/Makefile (new)   |     15 +
- .../touchscreen/GT9896S/goodix_cfg_bin.c (new)     |    599 +
- .../touchscreen/GT9896S/goodix_cfg_bin.h (new)     |    121 +
- .../touchscreen/GT9896S/goodix_default_fw.h (new)  |     22 +
- .../touchscreen/GT9896S/goodix_gtx8_update.c (new) |   1619 +
- .../touchscreen/GT9896S/goodix_ts_core.c (new)     |   2385 +
- .../touchscreen/GT9896S/goodix_ts_core.h (new)     |    784 +
- .../touchscreen/GT9896S/goodix_ts_spi.c (new)      |   1590 +
- .../touchscreen/GT9896S/goodix_ts_tools.c (new)    |    616 +
- .../touchscreen/GT9896S/goodix_ts_tui.c (new)      |     62 +
- drivers/input/touchscreen/GT9916P/Makefile (new)   |     17 +
- .../GT9916P/goodix_brl_fwupdate.c (new)            |   1335 +
- .../touchscreen/GT9916P/goodix_brl_hw.c (new)      |   1435 +
- .../touchscreen/GT9916P/goodix_brl_i2c.c (new)     |    270 +
- .../touchscreen/GT9916P/goodix_brl_spi.c (new)     |    304 +
- .../touchscreen/GT9916P/goodix_cfg_bin.c (new)     |    339 +
- .../touchscreen/GT9916P/goodix_ts_core.c (new)     |   2282 +
- .../touchscreen/GT9916P/goodix_ts_core.h (new)     |    682 +
- .../touchscreen/GT9916P/goodix_ts_gesture.c (new)  |    445 +
- .../touchscreen/GT9916P/goodix_ts_inspect.c (new)  |   2374 +
- .../touchscreen/GT9916P/goodix_ts_tools.c (new)    |    504 +
- .../touchscreen/GT9916P/goodix_ts_utils.c (new)    |    202 +
- drivers/input/touchscreen/GTP1151/Makefile (new)   |     11 +
- .../input/touchscreen/GTP1151/gt1x_generic.c (new) |   1853 +
- .../input/touchscreen/GTP1151/gt1x_tools.c (new)   |    522 +
- drivers/input/touchscreen/GTP1151/gt1x_tpd.c (new) |   1408 +
- .../touchscreen/GTP1151/gt1x_tpd_common.h (new)    |    416 +
- .../input/touchscreen/GTP1151/gt1x_update.c (new)  |   1157 +
- .../touchscreen/GTP1151/met_ftrace_touch.h (new)   |     55 +
- drivers/input/touchscreen/GTP1151/tpd.h (new)      |    186 +
- .../input/touchscreen/GTP1151/tpd_button.c (new)   |    123 +
- .../input/touchscreen/GTP1151/tpd_control.c (new)  |    627 +
- .../input/touchscreen/GTP1151/tpd_debug.c (new)    |    474 +
- .../input/touchscreen/GTP1151/tpd_debug.h (new)    |    145 +
- .../input/touchscreen/GTP1151/tpd_default.c (new)  |     20 +
- .../input/touchscreen/GTP1151/tpd_default.h (new)  |     10 +
- drivers/input/touchscreen/GTP1151/tpd_misc.c (new) |     48 +
- .../input/touchscreen/GTP1151/tpd_setting.c (new)  |     69 +
- drivers/input/touchscreen/Kconfig                  |     22 +
- drivers/input/touchscreen/Makefile                 |     10 +
- drivers/input/touchscreen/NT36672C/Makefile (new)  |     15 +
- drivers/input/touchscreen/NT36672C/nt36xxx.c (new) |   2406 +
- drivers/input/touchscreen/NT36672C/nt36xxx.h (new) |    222 +
- .../touchscreen/NT36672C/nt36xxx_ext_proc.c (new)  |    874 +
- .../touchscreen/NT36672C/nt36xxx_fw_update.c (new) |    995 +
- .../touchscreen/NT36672C/nt36xxx_mem_map.h (new)   |    458 +
- .../NT36672C/nt36xxx_mp_ctrlram.c (new)            |   2238 +
- .../NT36672C/nt36xxx_mp_ctrlram.h (new)            |   1098 +
- drivers/input/touchscreen/ZT7650M/Kconfig (new)    |      8 +
- drivers/input/touchscreen/ZT7650M/Makefile (new)   |      4 +
- .../input/touchscreen/ZT7650M/sec_input.h (new)    |    760 +
- .../input/touchscreen/ZT7650M/sec_tsp_log.c (new)  |    686 +
- .../input/touchscreen/ZT7650M/sec_tsp_log.h (new)  |     50 +
- .../input/touchscreen/ZT7650M/zinitix_ts.c (new)   |   4883 +
- .../input/touchscreen/ZT7650M/zinitix_ts.h (new)   |    309 +
- .../touchscreen/focaltech/ft3418/Kconfig (new)     |     10 +
- .../touchscreen/focaltech/ft3418/Makefile (new)    |     15 +
- .../focaltech/ft3418/focaltech_common.h (new)      |    187 +
- .../focaltech/ft3418/focaltech_config.h (new)      |    303 +
- .../focaltech/ft3418/focaltech_core.c (new)        |   2614 +
- .../focaltech/ft3418/focaltech_core.h (new)        |    406 +
- .../focaltech/ft3418/focaltech_esdcheck.c (new)    |    462 +
- .../focaltech/ft3418/focaltech_ex_fun.c (new)      |   1398 +
- .../focaltech/ft3418/focaltech_ex_mode.c (new)     |    352 +
- .../focaltech/ft3418/focaltech_flash.c (new)       |   2337 +
- .../focaltech/ft3418/focaltech_flash.h (new)       |    220 +
- .../focaltech/ft3418/focaltech_gesture.c (new)     |    371 +
- .../focaltech/ft3418/focaltech_i2c.c (new)         |    205 +
- .../ft3418/focaltech_point_report_check.c (new)    |    129 +
- .../ft3418/focaltech_pramtest_ft3418.h (new)       |     86 +
- .../focaltech/ft3418/focaltech_reg.h (new)         |    365 +
- .../focaltech/ft3418/focaltech_sec_cmd.c (new)     |   3392 +
- .../ft3418/focaltech_upgrade_ft3418.c (new)        |    341 +
- .../touchscreen/zinitix/zt7650m/Kconfig (new)      |     11 +
- .../touchscreen/zinitix/zt7650m/Makefile (new)     |      9 +
- .../touchscreen/zinitix/zt7650m/zinitix_ts.c (new) |   9672 +
- .../touchscreen/zinitix/zt7650m/zinitix_ts.h (new) |   1169 +
  drivers/interconnect/Kconfig                       |      1 +
  drivers/interconnect/Makefile                      |      1 +
  drivers/interconnect/mediatek/Kconfig (new)        |     87 +
@@ -6507,4 +6401,4 @@
  tools/thermal/tmon/Makefile                        |      2 +-
  usr/Makefile                                       |      5 +
  virt/kvm/kvm_main.c                                |     19 +-
- 6509 files changed, 7716958 insertions(+), 42835 deletions(-)
+ 6403 files changed, 7626350 insertions(+), 42835 deletions(-)
