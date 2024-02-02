@@ -407,19 +407,6 @@
  drivers/iio/adc/mt6577_auxadc.c                    |   236 +-
  drivers/iio/adc/mtk-spmi-pmic-adc.c (new)          |   741 +
  .../infiniband/hw/usnic/usnic_uiom_interval_tree.c |     3 +-
- drivers/input/evdev.c                              |    74 +
- drivers/input/input_boost/Kconfig (new)            |    71 +
- drivers/input/input_boost/Makefile (new)           |    26 +
- drivers/input/input_boost/evdev_booster.c (new)    |   491 +
- drivers/input/input_boost/input_booster.c (new)    |   932 +
- .../input/input_boost/input_booster_lsi.c (new)    |   251 +
- .../input/input_boost/input_booster_mode.c (new)   |  1023 +
- .../input/input_boost/input_booster_mtk.c (new)    |   144 +
- drivers/input/input_boost/input_booster_qc.c (new) |   253 +
- drivers/input/keyboard/Kconfig                     |    11 +-
- drivers/input/keyboard/Makefile                    |     3 +-
- drivers/input/keyboard/mtk-kpd.c (new)             |   358 +
- drivers/input/keyboard/mtk-pmic-keys.c             |   311 +-
  drivers/interconnect/Kconfig                       |     1 +
  drivers/interconnect/Makefile                      |     1 +
  drivers/interconnect/mediatek/Kconfig (new)        |    87 +
@@ -2619,4 +2606,4 @@
  tools/thermal/tmon/Makefile                        |     2 +-
  usr/Makefile                                       |     5 +
  virt/kvm/kvm_main.c                                |    19 +-
- 2621 files changed, 691960 insertions(+), 39752 deletions(-)
+ 2608 files changed, 688066 insertions(+), 39698 deletions(-)
