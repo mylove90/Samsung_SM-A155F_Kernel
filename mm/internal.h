@@ -35,7 +35,6 @@
 void page_writeback_init(void);
 
 vm_fault_t do_swap_page(struct vm_fault *vmf);
-void activate_page(struct page *page);
 
 #ifdef CONFIG_SPECULATIVE_PAGE_FAULT
 extern struct vm_area_struct *get_vma(struct mm_struct *mm,
@@ -263,11 +262,6 @@ struct compact_control {
 	bool contended;			/* Signal lock or sched contention */
 	bool rescan;			/* Rescanning the same pageblock */
 	bool alloc_contig;		/* alloc_contig_range allocation */
-};
-
-struct compact_control_ext {
-	struct compact_control *cc;
-	unsigned int nr_migrate_file_pages;	/* Number of file pages to migrate */
 };
 
 /*

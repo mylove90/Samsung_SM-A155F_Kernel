@@ -19,8 +19,7 @@
 #include <linux/syscalls.h>
 #include <linux/dma-heap.h>
 #include <uapi/linux/dma-heap.h>
-
-#include <trace/hooks/dmabuf.h>
+#include <trace/events/tracing_mark_write.h>
 
 #define DEVNAME "dma_heap"
 
@@ -82,15 +81,12 @@ struct dma_buf *dma_heap_buffer_alloc(struct dma_heap *heap, size_t len,
 				      unsigned int fd_flags,
 				      unsigned int heap_flags)
 {
-	bool vh_valid = false;
-
-	trace_android_vh_dmabuf_heap_flags_validation(heap,
-		len, fd_flags, heap_flags, &vh_valid);
+	struct dma_buf *dma_buf;
 
 	if (fd_flags & ~DMA_HEAP_VALID_FD_FLAGS)
 		return ERR_PTR(-EINVAL);
 
-	if (heap_flags & ~DMA_HEAP_VALID_HEAP_FLAGS && !vh_valid)
+	if (heap_flags & ~DMA_HEAP_VALID_HEAP_FLAGS)
 		return ERR_PTR(-EINVAL);
 	/*
 	 * Allocations from all heaps have to begin
@@ -100,7 +96,12 @@ struct dma_buf *dma_heap_buffer_alloc(struct dma_heap *heap, size_t len,
 	if (!len)
 		return ERR_PTR(-EINVAL);
 
-	return heap->ops->allocate(heap, len, fd_flags, heap_flags);
+	tracing_mark_begin("%s(%s, %zu, 0x%x, 0x%x)", "dma-buf_alloc",
+			   heap->name, len, fd_flags, heap_flags);
+	dma_buf = heap->ops->allocate(heap, len, fd_flags, heap_flags);
+	tracing_mark_end();
+
+	return dma_buf;
 }
 EXPORT_SYMBOL_GPL(dma_heap_buffer_alloc);
 
