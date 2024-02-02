@@ -638,56 +638,6 @@
  .../pinctrl/mediatek/pinctrl-mtk-mt6873.h (new)    |  2015 ++
  drivers/pinctrl/mediatek/pinctrl-paris.c           |   750 +-
  drivers/pinctrl/mediatek/pinctrl-paris.h           |    22 +
- drivers/power/supply/Kconfig                       |   139 +-
- drivers/power/supply/Makefile                      |    33 +-
- drivers/power/supply/adapter_class.c (new)         |   310 +
- drivers/power/supply/adapter_class.h (new)         |   175 +
- drivers/power/supply/charger_class.c (new)         |   929 +
- drivers/power/supply/charger_class.h (new)         |   390 +
- drivers/power/supply/mt6358-gauge.c (new)          |  4137 ++++
- drivers/power/supply/mt6359p-gauge.c (new)         |  3886 ++++
- drivers/power/supply/mt6360_charger.c (new)        |  1179 +
- drivers/power/supply/mt6360_pmu_chg.c (new)        |  3308 +++
- drivers/power/supply/mt6360_pmu_chg.h (new)        |   188 +
- drivers/power/supply/mt6362-chg.c (new)            |  3116 +++
- drivers/power/supply/mt6375-charger.c (new)        |  2757 +++
- drivers/power/supply/mt6375-gauge.c (new)          |  4075 ++++
- drivers/power/supply/mtk_basic_charger.c (new)     |   665 +
- drivers/power/supply/mtk_battery.c (new)           |  3568 +++
- drivers/power/supply/mtk_battery.h (new)           |  1151 +
- drivers/power/supply/mtk_battery_algo.c (new)      |  1832 ++
- .../supply/mtk_battery_coulomb_service.c (new)     |   526 +
- drivers/power/supply/mtk_battery_daemon.c (new)    |  5156 +++++
- drivers/power/supply/mtk_battery_daemon.h (new)    |    45 +
- drivers/power/supply/mtk_battery_table.h (new)     |  4451 ++++
- drivers/power/supply/mtk_charger.c (new)           |  3556 +++
- drivers/power/supply/mtk_charger.h (new)           |   426 +
- .../supply/mtk_charger_algorithm_class.c (new)     |   319 +
- .../supply/mtk_charger_algorithm_class.h (new)     |   193 +
- drivers/power/supply/mtk_charger_intf.c (new)      |   518 +
- drivers/power/supply/mtk_chg_type_det.c (new)      |   386 +
- drivers/power/supply/mtk_gauge.h (new)             |   295 +
- drivers/power/supply/mtk_pd.c (new)                |  1409 ++
- drivers/power/supply/mtk_pd.h (new)                |   206 +
- drivers/power/supply/mtk_pd_adapter.c (new)        |   865 +
- drivers/power/supply/mtk_pd_hal.c (new)            |   680 +
- drivers/power/supply/mtk_pe.c (new)                |  1010 +
- drivers/power/supply/mtk_pe.h (new)                |   134 +
- drivers/power/supply/mtk_pe2.c (new)               |  1519 ++
- drivers/power/supply/mtk_pe2.h (new)               |   195 +
- drivers/power/supply/mtk_pe2_hal.c (new)           |   684 +
- drivers/power/supply/mtk_pe4.c (new)               |  2093 ++
- drivers/power/supply/mtk_pe4.h (new)               |   251 +
- drivers/power/supply/mtk_pe4_hal.c (new)           |   988 +
- drivers/power/supply/mtk_pe5.c (new)               |  4214 ++++
- drivers/power/supply/mtk_pe5.h (new)               |   326 +
- drivers/power/supply/mtk_pe5_hal.c (new)           |   612 +
- drivers/power/supply/mtk_pe_hal.c (new)            |   441 +
- drivers/power/supply/mtk_pulse_charger.c (new)     |   565 +
- drivers/power/supply/mtk_smartcharging.h (new)     |   116 +
- drivers/power/supply/power_supply_core.c           |    22 +-
- .../power/supply/power_supply_sysfs_ssdev.c (new)  |   501 +
- drivers/power/supply/rt9759.c (new)                |  2005 ++
  drivers/ptp/Kconfig                                |     2 +-
  drivers/ptp/Makefile                               |     2 -
  drivers/ptp/ptp_kvm.c (new)                        |   197 +
@@ -2891,4 +2841,4 @@
  tools/thermal/tmon/Makefile                        |     2 +-
  usr/Makefile                                       |     5 +
  virt/kvm/kvm_main.c                                |    19 +-
- 2893 files changed, 800171 insertions(+), 40227 deletions(-)
+ 2843 files changed, 733639 insertions(+), 40214 deletions(-)
